@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
 html,
 body {
     margin: 0;
@@ -6,4 +8,18 @@ body {
         "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
         "Noto Color Emoji";
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: "4px";
+}
+body::-webkit-scrollbar-track {
+    margin-right: "4px";
+    width: "6px";
+}
+
+body::-webkit-scrollbar-thumb {
+    background: "gray";
+    border-radius: "24px";
 }

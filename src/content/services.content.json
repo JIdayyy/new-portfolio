@@ -1,0 +1,20 @@
+{
+    "description": "I build with you powerfull websites and complex logic in order to grow your buisness and to make a strong and unforgetable connection with your customers.",
+    "item": [
+        {
+            "number": "/1",
+            "name": "Web app",
+            "content": "Web app, e-shop and websites based on last technoligies like ReactJs, NextJs ..."
+        },
+        {
+            "number": "/2",
+            "name": "Mobile app",
+            "content": "Mobile application cross platform with React native"
+        },
+        {
+            "number": "/3",
+            "name": "Mobile app",
+            "content": "Server and buisness logic with node JS, microservices and more !"
+        }
+    ]
+}

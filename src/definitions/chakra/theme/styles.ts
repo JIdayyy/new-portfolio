@@ -7,11 +7,13 @@ export default {
         global: {
             h1: {
                 fontWeight: 500,
-                marginBottom: "0.5em",
             },
-            p: {
-                marginBottom: "1em",
-            },
+        },
+    },
+    textStyles: {
+        sectionTitle: {
+            color: "black",
+            fontSize: 70,
         },
     },
 } as GlobalStyles;

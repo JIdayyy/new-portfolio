@@ -1,0 +1,93 @@
+.typewritter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: 0.15em; Adjust as needed */
+    animation: typing 1s steps(30, end), blink-caret 0.8s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+.zindex {
+    z-index: 500;
+}
+
+.zindex0 {
+    z-index: -10 !important;
+}
+
+.wave {
+    z-index: 0 !important;
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.hypnotic-2 {
+    width: 60px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: grid;
+    animation: h2 2s infinite linear;
+}
+.hypnotic-2:before,
+.hypnotic-2:after {
+    content: "";
+    grid-area: 1/1;
+    border: inherit;
+    border-radius: 50%;
+    animation: inherit;
+    animation-duration: 3s;
+}
+.hypnotic-2:after {
+    --s: -1;
+}

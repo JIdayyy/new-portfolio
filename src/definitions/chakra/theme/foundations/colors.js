@@ -9,5 +9,12 @@ export default {
     },
     main: {
         100: "#282c34",
+        orange: "#F0A73E",
+    },
+    action: {
+        100: "#17203A",
+    },
+    secondary: {
+        100: "#F0A73F",
     },
 };

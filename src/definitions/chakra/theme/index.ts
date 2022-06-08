@@ -17,6 +17,9 @@ const overrides = {
     ...styles,
     colors,
     fontSizes,
+    fonts: {
+        body: `'Jeju Gothic', sans-serif`,
+    },
 };
 
 const theme = extendTheme(overrides);

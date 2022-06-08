@@ -1,17 +1,16 @@
-import React from "react";
-import { Spacer, Flex } from "@chakra-ui/react";
+import SectionWrapper from "@components/SectionWrapper";
+import { NextPage } from "next";
+import sectionsConfig from "src/config/sections";
 
-import { Header, Main, Cards, Footer } from "@components";
-
-const Home: React.FC = () => {
+const Home: NextPage = () => {
     return (
-        <Flex direction="column" minH="100vh">
-            <Header />
-            <Main />
-            <Cards />
-            <Spacer />
-            <Footer />
-        </Flex>
+        <>
+            {sectionsConfig.map((section) => (
+                <SectionWrapper key={section.id} bg={section.bg}>
+                    {section.component()}
+                </SectionWrapper>
+            ))}
+        </>
     );
 };
 
